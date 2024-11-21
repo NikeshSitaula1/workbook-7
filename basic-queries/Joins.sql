@@ -53,5 +53,3 @@ join `order details` on `order details`.ProductID = products.ProductID
 join orders on orders.OrderID = `order details`.OrderID
 where products.ProductName = "Sasquatch ale";
 
-
-
