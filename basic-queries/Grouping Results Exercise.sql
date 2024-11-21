@@ -1,9 +1,11 @@
+use northwind;
+
 -- 1. 
 SELECT COUNT(CompanyName)
 FROM suppliers;
 
 -- 2. 
-SELECT SUM(SALARY) AS SalaryTotalOfAllemployees
+SELECT ROUND(SUM(SALARY), 2) AS SalaryTotalOfAllemployees
 FROM employees;
 
 -- 3.
