@@ -1,4 +1,5 @@
 use northwind;
+
 -- 1.
 select 
 products.ProductID, products.ProductName, products.UnitPrice,
@@ -50,10 +51,7 @@ products.ProductName
 from products
 join `order details` on `order details`.ProductID = products.ProductID
 join orders on orders.OrderID = `order details`.OrderID
-where products.ProductID = (
-	select products.ProductID
-    from products
-    where products.ProductName = "Sasquatch Ale");
+where products.ProductName = "Sasquatch ale";
 
 
 
